@@ -1,16 +1,11 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { RootState } from "";
+import { RootState } from "../store";
 
 const dashboardSlice = createSlice({
     name: 'dashboard',
-    initialState: {
-        nodes: [],
-        edges: []
-    },
+    initialState: {},
     reducers: {},
 })
-
-export const gerNodes = (state: RootState) => state.nodes
 
 export default dashboardSlice.reducer
 
